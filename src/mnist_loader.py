@@ -40,7 +40,7 @@ def load_data():
     That's done in the wrapper function ``load_data_wrapper()``, see
     below.
     """
-    f = gzip.open('../data/mnist.pkl.gz', 'rb')
+    f = gzip.open('data/mnist.pkl.gz', 'rb')
     #training_data, validation_data, test_data = cPickle.load(f, encoding="latin1")
     training_data, validation_data, test_data = cPickle.load(f)
     f.close()
